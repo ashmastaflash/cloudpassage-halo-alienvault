@@ -1,4 +1,4 @@
-This plugin requires that the Halo API event retrieval program (located at https://github.com/cloudpassage/halo-event-connector-python) be installed on your AlienVault Sensor/AllInOne.  Which is unsupported by AlienVault.  Bring your sense of adventure.
+This plugin requires that the Halo API event retrieval program (located at https://github.com/cloudpassage/halo-event-connector-python) be installed on your AlienVault Sensor/AllInOne. 
 
 You must kick off the halo-event-connector-python script to output to CEF in a log file located at /var/log/halo.log.  Don’t forget to set up log rotate.
 Example:
