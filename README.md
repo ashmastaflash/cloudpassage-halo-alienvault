@@ -20,7 +20,10 @@ Update the AlienVault SID table in the All-In-One (or USM Server in distributed 
 
 Now, clear the file that contains your last retrieval timestamp and the next time the halo-event-connector-python script kicks off it will retrieve all events, and the ossim-agent service should pick them up.
 
+    truncate -s0 /opt/cloudpassage/bin/haloEvents.config
+
 Don't forget to put the logrotate config file and the cron config file in place (mentioned below) to ensure that events keep flowing in and don't consume the entire disk.
+
 
 Here’s a breakdown of the files you see here:
 cloudpassage-halo.cfg   			AlienVault plugin
