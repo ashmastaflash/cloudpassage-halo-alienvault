@@ -36,7 +36,7 @@ Don't forget to put the logrotate config file and the cron config file in place 
 
 * **sidmap/cloudpassage-halo.sql**        This is the SQL file to load into AlienVault for the Halo plugin to work properly.
 
-* **cloudpassage-halo-cron**              This is the cron script, it goes in /etc/cron.d
+* **cloudpassage-halo-cron**              This is the cron script, it goes in /etc/cron.d/
 
 * **cloudpassage-halo-logrotate**         This is the logrotate config, place it in /etc/logrotate.d/
 
