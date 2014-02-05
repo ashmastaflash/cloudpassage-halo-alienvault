@@ -25,16 +25,17 @@ Now, clear the file that contains your last retrieval timestamp and the next tim
 Don't forget to put the logrotate config file and the cron config file in place (mentioned below) to ensure that events keep flowing in and don't consume the entire disk.
 
 
-Here’s a breakdown of the files you see here:
-cloudpassage-halo.cfg   			AlienVault plugin
+####Here’s a breakdown of the files you see here:
 
-sidmap/alienvaultSidBuilder.py		Creates SQL script from Halo SIDs, depends on haloEventMappings.py
+*cloudpassage-halo.cfg   			AlienVault plugin
 
-sidmap/haloEventMappings.py		    This contains the event name to SID mapping, and a list of events to elevate rel/priority for Ensures that certain events will become alarms when they involve an asset with a value of 3 or greater.  This is derived from information in the halo-event-connector-python project.
+*sidmap/alienvaultSidBuilder.py		Creates SQL script from Halo SIDs, depends on haloEventMappings.py
 
-sidmap/cloudpassage-halo.sql        This is the SQL file to load into AlienVault for the Halo plugin to work properly.
+*sidmap/haloEventMappings.py		    This contains the event name to SID mapping, and a list of events to elevate rel/priority for Ensures that certain events will become alarms when they involve an asset with a value of 3 or greater.  This is derived from information in the halo-event-connector-python project.
 
-cloudpassage-halo-cron              This is the cron script, it goes in /etc/cron.d
+*sidmap/cloudpassage-halo.sql        This is the SQL file to load into AlienVault for the Halo plugin to work properly.
 
-cloudpassage-halo-logrotate         This is the logrotate config, place it in /etc/logrotate.d/
+*cloudpassage-halo-cron              This is the cron script, it goes in /etc/cron.d
+
+*cloudpassage-halo-logrotate         This is the logrotate config, place it in /etc/logrotate.d/
 
