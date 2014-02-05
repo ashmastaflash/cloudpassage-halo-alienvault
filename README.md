@@ -14,6 +14,7 @@ First, set up the halo-event-connector-python component.  Use the documentation 
 Then run the alienvault-setup program to enable the plugin, or enable it under AlienVault Center in the web UI.
 
 Update the AlienVault SID table in the All-In-One (or USM Server in distributed environments)
+
     cat cloudpassage-halo.sql|ossim-db
     /etc/init.d/ossim-server restart
 
